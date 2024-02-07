@@ -1,0 +1,58 @@
+package sgesp;
+
+import javax.swing.JPanel;
+import javax.swing.JLabel;
+
+import java.awt.Font;
+
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import javax.swing.ImageIcon;
+
+public class EditarFornecedor extends JPanel {
+	private JTextField txtmaterial;
+
+	/**
+	 * Create the panel.
+	 * @param i 
+	 * @param frame 
+	 */
+	public EditarFornecedor(JFrame frame, int id) {
+		setLayout(null);
+		
+		JLabel label = new JLabel("Atualizar ID: 0");
+		label.setFont(new Font("Arial", Font.PLAIN, 14));
+		label.setBounds(10, 11, 272, 14);
+		add(label);
+		
+		JLabel lblPessoaJuridicaId = new JLabel("Pessoa Juridica ID:0");
+		lblPessoaJuridicaId.setFont(new Font("Arial", Font.PLAIN, 14));
+		lblPessoaJuridicaId.setBounds(10, 49, 272, 14);
+		add(lblPessoaJuridicaId);
+		
+		JLabel label_1 = new JLabel("Componentes fornecidos :");
+		label_1.setBounds(10, 122, 156, 14);
+		add(label_1);
+		
+		txtmaterial = new JTextField();
+		txtmaterial.setColumns(10);
+		txtmaterial.setBounds(176, 119, 270, 20);
+		add(txtmaterial);
+		
+		JButton button = new JButton("Salvar");
+		button.setIcon(new ImageIcon(EditarFornecedor.class.getResource("/img/2683_32x32.png")));
+		button.setFont(new Font("Arial", Font.PLAIN, 12));
+		button.setBounds(10, 205, 140, 41);
+		add(button);
+		
+		
+         Fornecedor fornecedor = new  Fornecedor (id){
+			
+			
+		}
+
+	}
+	
+	
+}

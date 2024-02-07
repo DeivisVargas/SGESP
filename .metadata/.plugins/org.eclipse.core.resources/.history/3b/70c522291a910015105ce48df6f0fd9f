@@ -1,0 +1,77 @@
+package sgesp;
+
+import javax.swing.JPanel;
+import javax.swing.JLabel;
+
+import java.awt.Font;
+
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import javax.swing.ImageIcon;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class EditarFornecedor extends JPanel {
+	private JTextField txtmaterial;
+
+	/**
+	 * Create the panel.
+	 * @param i 
+	 * @param frame 
+	 */
+	public EditarFornecedor(JFrame frame, int id) {
+		setLayout(null);
+		
+		JLabel lblidfornecedor = new JLabel("Atualizar ID: 0");
+		lblidfornecedor.setFont(new Font("Arial", Font.PLAIN, 14));
+		lblidfornecedor.setBounds(10, 11, 272, 14);
+		add(lblidfornecedor);
+		
+		JLabel lblpessoajuridica = new JLabel("Pessoa Juridica ID:0");
+		lblpessoajuridica.setFont(new Font("Arial", Font.PLAIN, 14));
+		lblpessoajuridica.setBounds(10, 49, 272, 14);
+		add(lblpessoajuridica);
+		
+		JLabel label_1 = new JLabel("Componentes fornecidos :");
+		label_1.setBounds(10, 122, 156, 14);
+		add(label_1);
+		
+		txtmaterial = new JTextField();
+		txtmaterial.setColumns(10);
+		txtmaterial.setBounds(176, 119, 270, 20);
+		add(txtmaterial);
+		
+		JButton button = new JButton("Salvar");
+		button.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Fornecedor fornecedor = new Fornecedor(id) ;
+				fornecedor.setTipomaterial(txtmaterial.getText());
+				fornecedor.salvar();
+				
+				
+			}
+		});
+		button.setIcon(new ImageIcon(EditarFornecedor.class.getResource("/img/2683_32x32.png")));
+		button.setFont(new Font("Arial", Font.PLAIN, 12));
+		button.setBounds(10, 205, 140, 41);
+		add(button);
+		
+		
+         
+
+	
+	
+	Fornecedor fornecedor = new Fornecedor(id) ;
+	lblidfornecedor.setText("Atualizar ID:" + Integer.toString(fornecedor.getIdFornecedor()));
+	lblpessoajuridica.setText("Pessoa Juridica ID:" + Integer.toString(fornecedor.getIdPessoaJuridica()));
+	txtmaterial.setText(fornecedor.getTipomaterial());
+	
+		
+		
+	
+}
+
+	
+}

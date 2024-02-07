@@ -1,0 +1,42 @@
+lista de produtos para cadastrar manualmento no sitema 
+
+Gerador de energia omega 
+
+  laminas de cobre = 35
+  coletor de omega = 1
+  fibra "folhas "  = 2  
+  eixo de omega  = 1 
+  casco  ms-1    = 1
+ 
+
+Gerador de energia  palio
+
+  laminas de cobre = 45
+  coletor de palio= 1
+  fibra "folhas "  = 3  
+  eixo de palio = 1 
+  casco  ms-2    = 1
+
+Gerador de energia  gol 
+  
+  laminas de cobre = 40
+  coletor de gol 1
+  fibra "folhas "  = 2  
+  eixo de gol = 1 
+  casco  ms-3    = 1
+  
+Gerador de energia  monza
+
+  laminas de cobre = 50
+  coletor de monza = 1
+  fibra "folhas "  = 3  
+  eixo de monza= 1 
+  casco  ms-4    = 1
+
+Gerador de energia  fusca 
+
+   laminas de cobre = 60
+  coletor de fusca = 1
+  fibra "folhas "  = 3  
+  eixo de fusca =  1 
+  casco  ms-5    = 1

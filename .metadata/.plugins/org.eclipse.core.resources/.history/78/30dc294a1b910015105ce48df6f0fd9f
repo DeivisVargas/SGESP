@@ -1,0 +1,15 @@
+package sgesp;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class RemoverFornecedor extends JPanel {
+
+	/**
+	 * Create the panel.
+	 */
+	public RemoverFornecedor(JFrame frame, int id) {
+
+	}
+
+}

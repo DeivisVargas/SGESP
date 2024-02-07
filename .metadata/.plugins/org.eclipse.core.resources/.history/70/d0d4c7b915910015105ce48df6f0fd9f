@@ -1,0 +1,26 @@
+package sgesp;
+
+import javax.swing.JPanel;
+import javax.swing.JLabel;
+import java.awt.Font;
+
+public class EditarFornecedor extends JPanel {
+
+	/**
+	 * Create the panel.
+	 */
+	public EditarFornecedor() {
+		setLayout(null);
+		
+		JLabel label = new JLabel("Atualizar ID: 0");
+		label.setFont(new Font("Arial", Font.PLAIN, 14));
+		label.setBounds(10, 11, 272, 14);
+		add(label);
+		
+		JLabel lblPessoaJuridicaId = new JLabel("Pessoa Juridica ID:0");
+		lblPessoaJuridicaId.setFont(new Font("Arial", Font.PLAIN, 14));
+		lblPessoaJuridicaId.setBounds(10, 49, 272, 14);
+		add(lblPessoaJuridicaId);
+
+	}
+}
